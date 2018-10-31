@@ -12,11 +12,9 @@ public class 冒泡排序 {
      * @param args
      */
     public static void main(String[] args) {
-        int[] a={49,38,65,97,76,13,27,49,78,34,12,64,1,8};
+        int[] a={49,38,65,97,76,13,27,49,78,34};
         System.out.println("排序之前：");
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i]+" ");
-        }
+        for (int i = 0; i < a.length; i++) System.out.print(a[i]+" ");
         //冒泡排序
         for (int i = 0; i < a.length; i++) {
             for(int j = 0; j<a.length-i-1; j++){
@@ -30,9 +28,7 @@ public class 冒泡排序 {
         }
         System.out.println();
         System.out.println("排序之后：");
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i]+" ");
-        }
+        for (int i = 0; i < a.length; i++) System.out.print(a[i]+" ");
     }
 
 }

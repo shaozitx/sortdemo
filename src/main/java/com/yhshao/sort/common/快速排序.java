@@ -1,5 +1,7 @@
 package com.yhshao.sort.common;
 
+import java.util.Random;
+
 /**
  * Created by shaoqi on 17/12/14.
  */
@@ -8,6 +10,10 @@ public class 快速排序 {
 
     public static void main(String[] args) {
         int[] a={49,38,65,97,76,13,27,49,78,34,12,64,1,8};
+        for (int i = 0; i < 40000; i++) {
+
+        }
+
         System.out.println("排序之前：");
         for (int i = 0; i < a.length; i++) {
             System.out.print(a[i]+" ");
@@ -21,7 +27,8 @@ public class 快速排序 {
         }
     }
 
-    private static void quick(int[] a) {
+    public static void quick(int[] a) {
+
         if(a.length>0){
             quickSort(a,0,a.length-1);
         }
@@ -51,7 +58,5 @@ public class 快速排序 {
         a[low] = temp;
         return low;
     }
-
-
 
 }

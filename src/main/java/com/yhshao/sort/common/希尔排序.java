@@ -24,6 +24,7 @@ public class 希尔排序 {
             d = d / 2;
             for(int x=0;x<d;x++){
                 for(int i=x+d;i<a.length;i=i+d){
+                    System.out.println("i的值为" + i);
                     int temp = a[i];
                     int j;
                     for(j=i-d;j>=0&&a[j]>temp;j=j-d){
